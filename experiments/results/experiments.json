@@ -1,0 +1,201 @@
+{
+  "E1": {
+    "seeds": 20,
+    "rows": [
+      {
+        "load": "closed loop, 10 users",
+        "stall": "none",
+        "requests": 307,
+        "share_in_stall_window": 0.258,
+        "share_over_20s": 0.006,
+        "p95_s": 11.8,
+        "p99_s": 17.8,
+        "max_s": 33.5
+      },
+      {
+        "load": "closed loop, 10 users",
+        "stall": "30 s",
+        "requests": 229,
+        "share_in_stall_window": 0.045,
+        "share_over_20s": 0.047,
+        "p95_s": 19.2,
+        "p99_s": 44.4,
+        "max_s": 57.4
+      },
+      {
+        "load": "open loop, same average rate",
+        "stall": "none",
+        "requests": 307,
+        "share_in_stall_window": 0.275,
+        "share_over_20s": 0.006,
+        "p95_s": 11.8,
+        "p99_s": 19.7,
+        "max_s": 35.3
+      },
+      {
+        "load": "open loop, same average rate",
+        "stall": "30 s",
+        "requests": 307,
+        "share_in_stall_window": 0.275,
+        "share_over_20s": 0.122,
+        "p95_s": 32.3,
+        "p99_s": 46.8,
+        "max_s": 63.8
+      }
+    ]
+  },
+  "E2": {
+    "seeds": 20,
+    "rows": [
+      {
+        "load": "short burst (20 rps for 10 s)",
+        "retry": "none",
+        "error_rate": 0.0486,
+        "calls_per_request": 1.0,
+        "p95_s": 11.2,
+        "wasted_cost_share": 0.01
+      },
+      {
+        "load": "short burst (20 rps for 10 s)",
+        "retry": "immediate",
+        "error_rate": 0.0463,
+        "calls_per_request": 1.27,
+        "p95_s": 11.0,
+        "wasted_cost_share": 0.008
+      },
+      {
+        "load": "short burst (20 rps for 10 s)",
+        "retry": "backoff",
+        "error_rate": 0.0046,
+        "calls_per_request": 1.24,
+        "p95_s": 15.8,
+        "wasted_cost_share": 0.01
+      },
+      {
+        "load": "short burst (20 rps for 10 s)",
+        "retry": "budget",
+        "error_rate": 0.0414,
+        "calls_per_request": 1.1,
+        "p95_s": 12.0,
+        "wasted_cost_share": 0.013
+      },
+      {
+        "load": "sustained overload (all-large, 8 rps)",
+        "retry": "none",
+        "error_rate": 0.4435,
+        "calls_per_request": 1.0,
+        "p95_s": 8.8,
+        "wasted_cost_share": 0.004
+      },
+      {
+        "load": "sustained overload (all-large, 8 rps)",
+        "retry": "immediate",
+        "error_rate": 0.4428,
+        "calls_per_request": 3.47,
+        "p95_s": 8.5,
+        "wasted_cost_share": 0.003
+      },
+      {
+        "load": "sustained overload (all-large, 8 rps)",
+        "retry": "backoff",
+        "error_rate": 0.371,
+        "calls_per_request": 3.78,
+        "p95_s": 27.5,
+        "wasted_cost_share": 0.003
+      },
+      {
+        "load": "sustained overload (all-large, 8 rps)",
+        "retry": "budget",
+        "error_rate": 0.4416,
+        "calls_per_request": 1.1,
+        "p95_s": 8.9,
+        "wasted_cost_share": 0.004
+      }
+    ]
+  },
+  "E3": {
+    "seeds": 10,
+    "human_handling_usd": 2.5,
+    "rows": [
+      {
+        "configuration": "route by intent (default)",
+        "cost_per_request_usd": 0.00431,
+        "resolution_rate": 0.924,
+        "cost_per_resolved_usd": 0.00467,
+        "with_human_handling_usd": 0.194,
+        "p95_s": 11.7,
+        "ttft_p95_s": 0.95
+      },
+      {
+        "configuration": "everything to large",
+        "cost_per_request_usd": 0.00762,
+        "resolution_rate": 0.929,
+        "cost_per_resolved_usd": 0.00821,
+        "with_human_handling_usd": 0.185,
+        "p95_s": 11.6,
+        "ttft_p95_s": 1.07
+      },
+      {
+        "configuration": "everything to small",
+        "cost_per_request_usd": 0.00035,
+        "resolution_rate": 0.856,
+        "cost_per_resolved_usd": 0.00041,
+        "with_human_handling_usd": 0.36,
+        "p95_s": 4.7,
+        "ttft_p95_s": 0.41
+      },
+      {
+        "configuration": "no cache",
+        "cost_per_request_usd": 0.00427,
+        "resolution_rate": 0.919,
+        "cost_per_resolved_usd": 0.00465,
+        "with_human_handling_usd": 0.208,
+        "p95_s": 11.6,
+        "ttft_p95_s": 0.93
+      },
+      {
+        "configuration": "prompt bloat (10 chunks, 8 turns)",
+        "cost_per_request_usd": 0.00696,
+        "resolution_rate": 0.926,
+        "cost_per_resolved_usd": 0.00752,
+        "with_human_handling_usd": 0.191,
+        "p95_s": 11.8,
+        "ttft_p95_s": 1.32
+      },
+      {
+        "configuration": "short answers (max 300 tokens)",
+        "cost_per_request_usd": 0.0034,
+        "resolution_rate": 0.766,
+        "cost_per_resolved_usd": 0.00445,
+        "with_human_handling_usd": 0.588,
+        "p95_s": 6.2,
+        "ttft_p95_s": 0.94
+      }
+    ]
+  },
+  "E4": {
+    "rows": [
+      {
+        "candidate": "no change (A/A)",
+        "trials": 20,
+        "single_run_p95_over_5pct": 0.25,
+        "three_runs_pooled_p95_over_5pct": 0.15,
+        "bootstrap_ci_above_5pct": 0.0
+      },
+      {
+        "candidate": "large model 10% slower",
+        "trials": 20,
+        "single_run_p95_over_5pct": 0.55,
+        "three_runs_pooled_p95_over_5pct": 0.85,
+        "bootstrap_ci_above_5pct": 0.15
+      },
+      {
+        "candidate": "large model 25% slower",
+        "trials": 20,
+        "single_run_p95_over_5pct": 1.0,
+        "three_runs_pooled_p95_over_5pct": 1.0,
+        "bootstrap_ci_above_5pct": 0.9
+      }
+    ]
+  }
+}

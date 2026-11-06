@@ -1,0 +1,24 @@
+{
+  "title": "AI Performance and Cost Lab",
+  "description": "Load-test an LLM application and gate speed, spend and outcome together: latency percentiles and time to first token, coordinated omission, rate limits and retry storms, token budgets, cost per resolved request and regression gates that do not flap. No API key needed.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Jadhav, Kavita",
+      "affiliation": "K11 Software Solutions"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "llm-performance",
+    "load-testing",
+    "cost-optimization",
+    "ai-quality-engineering",
+    "llm-evaluation",
+    "rate-limiting",
+    "latency",
+    "performance-testing",
+    "finops"
+  ],
+  "notes": "Code is licensed under MIT; the written material (articles/) is licensed under CC BY 4.0. The service, models, prices and users are simulated and illustrative."
+}

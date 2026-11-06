@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or its articles, please cite it as below."
+type: software
+title: "AI Performance and Cost Lab"
+abstract: "Load-test an LLM application and gate speed, spend and outcome together: latency percentiles and time to first token, coordinated omission, rate limits and retry storms, token budgets, cost per resolved request and regression gates that do not flap. No API key needed."
+authors:
+  - family-names: Jadhav
+    given-names: Kavita
+    affiliation: K11 Software Solutions
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add your ORCID iD here and in .zenodo.json
+repository-code: "https://github.com/K11-Software-Solutions/ai-performance-cost-lab"
+url: "https://github.com/K11-Software-Solutions/ai-performance-cost-lab"
+version: "1.0.0"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - llm-performance
+  - load-testing
+  - cost-optimization
+  - ai-quality-engineering
+  - llm-evaluation
+  - rate-limiting
+  - latency
+  - performance-testing
+  - finops
+# After the first Zenodo release, add the concept DOI (it always resolves to the latest version):
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXX"
+#     description: Concept DOI (all versions)

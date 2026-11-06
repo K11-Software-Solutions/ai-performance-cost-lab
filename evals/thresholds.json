@@ -1,0 +1,28 @@
+{
+  "_comment": "Service-level objectives and budgets per load scenario, set a little above the measured baseline. Cost is gated per RESOLVED request: failed requests are cheap, so cost per request improves when quality collapses.",
+  "steady": {
+    "latency_p95_ms": {"max": 13000},
+    "ttft_p95_ms": {"max": 1500},
+    "error_rate": {"max": 0.005},
+    "resolution_rate": {"min": 0.9},
+    "cost_per_resolved_usd": {"max": 0.005},
+    "tokens_in_per_request": {"max": 1700},
+    "retry_amplification": {"max": 1.05},
+    "wasted_cost_share": {"max": 0.02}
+  },
+  "peak": {
+    "latency_p95_ms": {"max": 14000},
+    "ttft_p95_ms": {"max": 2500},
+    "error_rate": {"max": 0.005},
+    "resolution_rate": {"min": 0.9}
+  },
+  "burst": {
+    "error_rate": {"max": 0.005},
+    "retry_amplification": {"max": 1.3},
+    "latency_p99_ms": {"max": 30000}
+  },
+  "stall": {
+    "error_rate": {"max": 0.005},
+    "ttft_p95_ms": {"max": 6000}
+  }
+}

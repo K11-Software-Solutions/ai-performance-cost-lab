@@ -1,0 +1,11 @@
+[project]
+name = "ai-performance-cost-lab"
+version = "1.0.0"
+description = "Performance and cost testing for LLM applications: latency percentiles, coordinated omission, rate limits and retries, token budgets, cost per resolved request and statistically sound regression gates."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
